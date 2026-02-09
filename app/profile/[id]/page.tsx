@@ -43,6 +43,7 @@ const ProfileDetails = async ({
             src={data.data.avatar}
             width={44}
             height={44}
+              unoptimized
             alt="Profile"
             className="w-44 h-44 rounded-full  absolute -bottom-20 left-1/2 transform -translate-x-1/2 border-5 border-white"
           />

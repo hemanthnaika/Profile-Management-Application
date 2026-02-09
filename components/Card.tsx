@@ -15,6 +15,7 @@ const Card = ({ profileInfo }: { profileInfo: Profile }) => {
           width={32}
           height={32}
           alt="Profile"
+          unoptimized
           className="w-32 h-32 rounded-full object-cover absolute top-16 left-1/2 -translate-x-1/2 border-4 border-secondary z-10"
         />
 
