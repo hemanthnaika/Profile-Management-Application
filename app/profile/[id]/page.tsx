@@ -43,7 +43,7 @@ const ProfileDetails = async ({
             src={data.data.avatar}
             width={44}
             height={44}
-              unoptimized
+            unoptimized
             alt="Profile"
             className="w-44 h-44 rounded-full  absolute -bottom-20 left-1/2 transform -translate-x-1/2 border-5 border-white"
           />
@@ -79,7 +79,10 @@ const ProfileDetails = async ({
             </h6>
           </div>
 
-          <div className="bg-primary rounded-full  py-2 text-white mx-auto mt-10 w-80 flex items-center gap-3 justify-center cursor-pointer hover:bg-primary/90 transition-all duration-300">
+          <a
+            href="#visual"
+            className="bg-primary rounded-full  py-2 text-white mx-auto mt-10 w-80 flex items-center gap-3 justify-center cursor-pointer hover:bg-primary/90 transition-all duration-300"
+          >
             <div>
               <div className="bg-white rounded-full p-2">
                 <Play className="text-primary w-5 h-5" />
@@ -90,7 +93,7 @@ const ProfileDetails = async ({
                 Watch my Visual Resume Now
               </h5>
             </div>
-          </div>
+          </a>
         </div>
 
         <div className="border-2 border-[#E8E8ED] p-5 rounded-lg mt-10 flex flex-col md:flex-row  gap-3 text-center">
@@ -154,7 +157,7 @@ const ProfileDetails = async ({
 
         <CaseSlider cases={cases} />
 
-        <div className="mt-10">
+        <div className="mt-10" id="visual">
           <h1 className="text-center mb-10 text-2xl font-adamina font-bold">
             Visual Resume
           </h1>
@@ -168,12 +171,9 @@ const ProfileDetails = async ({
                 priority
               />
 
-              {/* Soft overlay */}
               <div className="absolute inset-0 bg-black/10"></div>
 
-              {/* Bottom Controls */}
               <div className="absolute inset-x-0 bottom-0 p-6 flex items-center justify-between font-adamina">
-                {/* Left - YouTube */}
                 <div className="flex items-center gap-2 text-white">
                   <div className=" rounded-md p-1">
                     <Youtube className="w-10 h-10" />
@@ -181,14 +181,11 @@ const ProfileDetails = async ({
                   <span className="font-semibold text-md">YouTube</span>
                 </div>
 
-                {/* Right - Controls */}
                 <div className="flex items-center gap-3">
-                  {/* Pause Button */}
                   <button className="w-12 h-12 rounded-full bg-white/20 backdrop-blur flex items-center justify-center text-white hover:bg-white/30 transition">
                     <Pause size={20} />
                   </button>
 
-                  {/* Watch Button */}
                   <button className="px-5 py-3 rounded-full bg-white/20 backdrop-blur text-white text-sm font-medium hover:bg-white/30 transition">
                     Watch the Full Video
                   </button>

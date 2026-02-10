@@ -1,16 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Adamina&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import "tailwindcss";
+  @import url('https://fonts.googleapis.com/css2?family=Adamina&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+  @import "tailwindcss";
 
-@theme {
-  --color-primary: #f6893c;
-  --color-secondary: #f7f6f5;
-  --color-background: #ffffff;
-  --font-roboto: 'Roboto', sans-serif;
-  --font-adamina: 'Adamina', serif;
-}
-
-@layer base {
-  .card {background:  #9f9f9f;
+  @theme {
+    --color-primary: #f6893c;
+    --color-secondary: #f7f6f5;
+    --color-background: #ffffff;
+    --font-roboto: 'Roboto', sans-serif;
+    --font-adamina: 'Adamina', serif;
   }
-}
+
+  @layer base {
+    html {
+    scroll-behavior: smooth;
+  }
+    .card {background:  #9f9f9f;
+    }
+  }
 

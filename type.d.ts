@@ -14,9 +14,8 @@ export interface Profile {
 }
 
 export interface ProfilesResponse {
-  success: boolean;
-  total: number;
   data: Profile[];
+  success: boolean;
 }
 
 export interface SingleProfileResponse {

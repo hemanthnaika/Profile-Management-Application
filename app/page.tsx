@@ -13,7 +13,7 @@ const Home = async () => {
 
   return (
     <CustomLayout>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 pb-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 pb-16 justify-center">
         {data.data.map((profile: Profile) => (
           <Card key={profile.id} profileInfo={profile} />
         ))}

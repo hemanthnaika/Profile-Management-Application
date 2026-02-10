@@ -17,6 +17,9 @@ const adamina = Adamina({
 export const metadata: Metadata = {
   title: "Profile Management",
   description: "Profile Management Application",
+  icons: {
+    icon: "/profilelogo.png",
+  },
 };
 
 export default function RootLayout({
